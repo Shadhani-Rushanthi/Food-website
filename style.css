@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+GLOBAL
+============================== */
+
+h1{
+    font-size: 6.5rem!important;
+}
+
+h3{
+    font-family: 'Merriweather', serif!important;
+    font-size: 1.3rem!important;
+    font-weight: 700!important;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif!important;
+    font-weight: 700!important;
+    word-spacing: .4vw!important;
+}
+
+h6{
+    font-size: .9rem!important;
+    font-weight: 700!important;
+    color: #27ae60!important;
+}
+
+p{
+    font-size: 1rem!important;
+    font-family: 'Karla', sans-serif!important;
+}
+
+button{
+    background: #6CAA7F!important;
+    border-style: none!important;
+    padding: 0.7rem 1.3rem!important;
+    font-weight: 700!important;
+    font-size: .9rem!important;
+    letter-spacing: 1px!important;
+    color: #fff!important;
+}
+
+hr{
+    background: #2ecc71!important;
+    color: #2ecc71!important;
+    height: .1rem!important;
+}
+
+/* =======================================
+BODY
+========================================== */
+
+body{
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+header .head{
+    position: relative;
+}
+
+header .head .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .head .text h1{
+    font-family:  'Leckerli One', cursive;
+    color: #000;
+}
+
+header .head .text h6{
+    font-weight: 800!important;
+    letter-spacing: .5rem!important;
+}
+
+header .navbar .navbar-nav i{
+    font-size: 1.2rem!important;
+    color: #6CAA7F;
+    cursor: pointer;
+}
+
+header .navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+header .navbar .navbar-nav .nav-link:hover::after{
+    width: 60%;
+    border-bottom: 2px solid #2ecc71;
+}
+
+.featured .one{    
+    height: 300px;
+    position: relative;
+}
+
+.featured .one img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.featured .one .text{
+    position: absolute;
+    bottom: 0;
+    left: 5;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.featured .row .one .text p{
+    letter-spacing: .2rem;
+    line-height: 2px;
+}
+
+.featured .one h6{    
+    font-weight: 400!important;
+    letter-spacing: .2rem!important;
+    color: white!important;
+}
+
+.featured .one a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #27ae60;    
+}
+
+.subscription{
+    background-color: #cbf0d6;
+}
+
+.subscription .sub input{
+    padding: .5rem;
+    outline: none;
+    border: 1px solid #27ae60
+}
+
+.siderbar .side1{
+    height: 300px;
+}
+
+.blogs .blog .post1 a{
+    text-decoration: none;
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.blogs .sidebar .side2 .sidetext h4{
+    font-size: 1rem;
+}
+
+.blogs .sidebar .side2 .sidetext a{
+    text-decoration: none;
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.blogs .sidebar .side3 .content{
+    position: relative;
+    height: 300px;
+}
+
+.blogs .sidebar .side3 .content img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.blogs .sidebar .side3 .content .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 10rem 1.1rem 0 1.1rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header .head{
+        padding: 0!important;
+        margin: 0!important;
+    }
+    header img{
+        height: 40vh!important;
+        background-size: cover;
+        
+    }
+    header .intro .head h1{
+       font-size: 4.5rem!important;
+    }
+
+    header .intro .head h6{
+        padding: 0!important;
+        margin: 0!important;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+  
+    header .intro .head h1{
+       font-size: 3.5rem!important;
+    }
+
+  }
